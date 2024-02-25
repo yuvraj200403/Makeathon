@@ -1,0 +1,20 @@
+.copyright-container {
+    /* Ensure full width */
+    width: 100%;
+  
+    /* Center the content horizontally */
+    display: absolute; /* Create a flexible container */
+    justify-content: center; /* Align content to center */
+    align-items: center; /* Align content vertically (optional) */
+
+    /* Position at the bottom of the viewport */
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .paragraph-5 {
+    /* Adjust styles as needed */
+    font-size: 18px; /* Example size */
+    color: #999; /* Example color */
+  }
+  

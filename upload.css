@@ -1,0 +1,25 @@
+.feedback-section {
+    /* Center horizontally */
+    display: flex; /* Create a flex container */
+    justify-content: center; /* Align content to center */
+    align-items: center; /* Align content vertically (optional) */
+    background-color: #9fd17380; /* Optional background for better visibility */
+  }
+  label {
+    display: block;
+    align-items: center;
+  }
+  
+  input, textarea {
+   align-items: center;
+  }
+  
+  input[type="submit"] {
+    align-items: center;
+  }
+  .centered-button {
+    display: block; /* Make it a block element */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center vertically within the button */
+  }
+  

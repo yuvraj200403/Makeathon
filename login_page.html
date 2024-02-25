@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agritix</title>
+    <link rel="stylesheet"
+        href="https://assets-global.website-files.com/65d5be01a9d59ba2dc1811f5/css/hritiks-dynamite-site.webflow.0fdcc138b.css"
+        type="text/css" />
+    <link rel="stylesheet" href="login.css"> <!-- Add any additional stylesheets if needed -->
+    <style>
+        /* Custom styles for the login form */
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .login-container button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body class="body">
+    <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+        role="banner" class="navbar w-nav">
+        <div class="hover w-container">
+            <a href="#" class="w-nav-brand">
+                <h1 class="heading-2">Agritix</h1>
+            </a>
+            <nav role="navigation" class="w-nav-menu">
+                <a href="contact.html" class="w-nav-link">Contact</a>
+                <a href="login.html" class="w-nav-link">Login</a>
+            </nav>
+            <div class="w-nav-button">
+                <div class="w-icon-nav-menu"></div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="w-layout-blockcontainer w-container">
+            <h1 class="heading-3">Login</h1>
+        </div>
+        <div class="login-container w-container">
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="button" onclick="performLogin()">Login</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rest of your existing code -->
+
+    <section>
+        <div class="w-layout-blockcontainer w-container">
+          <div class="copyright-container">
+            <p class="paragraph-5">Copyright © 2024 Agitrix. All rights reserved.</p>
+          </div>
+        </div>
+      </section>
+      <link rel="stylesheet" href="./login.css" />      
+      
+    <script>
+        function performLogin() {
+            // Get values from the form
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Replace these with your actual username and password
+            var correctUsername = "A";
+            var correctPassword = "B";
+
+            // Validate the credentials
+            if (username === correctUsername && password === correctPassword) {
+                // Save username to sessionStorage
+                sessionStorage.setItem('loggedInUser', username);
+
+                // Clear the form
+                document.getElementById("loginForm").reset();
+
+                // Redirect to the home page (replace 'home.html' with the actual home page URL)
+                window.location.href = 'main_page.html';
+            } else {
+                alert("Invalid username or password!");
+            }
+        }
+
+    </script>
+    
+</body>

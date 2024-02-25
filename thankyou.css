@@ -1,0 +1,75 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8bc18c; /* Light gray background */
+  }
+  
+  header, main, footer {
+    max-width: 1000px;
+    margin: 0 auto; /* Center content horizontally */
+    padding: 20px;
+  }
+  
+  /* Thank you section */
+  .thank-you {
+    background-color: #fff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 40px;
+    text-align: center; /* Center text within the section */
+  }
+  
+  .thank-you h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .thank-you p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+  }
+  
+  /* Buttons */
+  .actions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .actions li {
+    display: inline-block; /* Align buttons horizontally */
+    margin-right: 10px;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  .btn-primary {
+    background-color: #28a745; /* Green */
+  }
+  
+  .btn-secondary {
+    background-color: #dc3545; /* Red */
+  }
+  
+  /* Main container centering */
+  .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Optional: Set height for full viewport */
+  }
+ 
+  
